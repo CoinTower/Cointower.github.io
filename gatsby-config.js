@@ -2,6 +2,5 @@ module.exports = {
   siteMetadata: {
     title: `Cointower: Play RPS, Win Money!`,
   },
-  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-sass`],
-  pathPrefix: `/Cointower.github.io`
+  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-sass`]
 }
