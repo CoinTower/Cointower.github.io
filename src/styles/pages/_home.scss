@@ -1,0 +1,67 @@
+
+.home {
+  background-image: url('../images/background-dark.png');
+  background-repeat: repeat;
+  background-size: contain;
+  min-height: 100vh;
+  
+  .content {
+    background-color: rgba($light-purple, 0.95);
+    height: 100vh;
+    @include grid-container;
+  }
+
+  .header {
+    @include grid-column(12);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+  
+    @include grid-media($medium) {
+      margin-top: 35px;
+      flex-direction: row !important;
+    }
+  }
+
+  .imgLogo {
+    display: none;
+    @include grid-media($medium) {
+      display: block !important;
+      height: 170px;
+      margin-right: 30px;
+    }
+    @include grid-media($large) {
+      height: 140px;
+    }
+  }
+
+  .txtLogo {
+    height: 80px;
+    @include grid-media($xlarge) {
+      height: 110px;
+    }
+  }
+
+  .slogan {
+    font-family: 'PeaceSans';
+    font-size: 13pt;
+    color: white;
+    @include grid-column(10);
+    @include grid-shift(1);
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    @include grid-media($medium) {
+      font-size: 25pt;
+    }
+    a { 
+      line-height: 3pt;
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+}
