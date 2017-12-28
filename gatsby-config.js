@@ -3,5 +3,5 @@ module.exports = {
     title: `Cointower: Play RPS, Win Money!`,
   },
   plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-sass`],
-  pathPrefix: `cointower`
+  pathPrefix: `/Cointower.github.io`
 }
